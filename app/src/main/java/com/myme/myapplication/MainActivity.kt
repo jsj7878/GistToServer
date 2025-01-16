@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity() {
                 "출발",
                 Toast.LENGTH_SHORT
             ).show()
+            sendMessageToServer("출발")
         }
         findViewById<TextView>(R.id.arrive_button).setOnClickListener {
             Toast.makeText(
@@ -54,6 +55,7 @@ class MainActivity : AppCompatActivity() {
                 "도착",
                 Toast.LENGTH_SHORT
             ).show()
+            sendMessageToServer("도착")
         }
 
         // 권한 요청
